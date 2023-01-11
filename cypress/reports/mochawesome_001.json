@@ -1,0 +1,87 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-07-24T19:18:18.268Z",
+    "end": "2022-07-24T19:18:46.910Z",
+    "duration": 28642,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2d7b3f00-15c2-4b22-b88b-8d8101251945",
+      "title": "",
+      "fullFile": "cypress\\e2e\\myFirstTc.cy.js",
+      "file": "cypress\\e2e\\myFirstTc.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "OrangeHRM Login",
+          "fullTitle": "OrangeHRM Login",
+          "timedOut": null,
+          "duration": 22778,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://opensource-demo.orangehrmlive.com/index.php/auth/validateCredentials');\ncy.get('#txtUsername').type('Admin');\ncy.get('#txtPassword').type('admin123');\ncy.get('#btnLogin').click();\ncy.get('#menu_admin_viewAdminModule > b', {\n  timeout: 6000\n}).click();",
+          "err": {},
+          "uuid": "a7d056a7-e993-4bd8-acc7-46b9558d39ac",
+          "parentUUID": "2d7b3f00-15c2-4b22-b88b-8d8101251945",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "a7d056a7-e993-4bd8-acc7-46b9558d39ac"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 22778,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
