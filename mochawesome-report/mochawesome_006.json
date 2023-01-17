@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-07-24T19:18:18.268Z",
-    "end": "2022-07-24T19:18:46.910Z",
-    "duration": 28642,
+    "start": "2023-01-16T19:25:06.800Z",
+    "end": "2023-01-16T19:25:14.197Z",
+    "duration": 7397,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,40 +18,40 @@
   },
   "results": [
     {
-      "uuid": "2d7b3f00-15c2-4b22-b88b-8d8101251945",
+      "uuid": "60c12962-173e-42c6-bc54-6618f805fe78",
       "title": "",
-      "fullFile": "cypress\\e2e\\myFirstTc.cy.js",
-      "file": "cypress\\e2e\\myFirstTc.cy.js",
+      "fullFile": "cypress\\e2e\\pom.cy.js",
+      "file": "cypress\\e2e\\pom.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [
         {
-          "title": "OrangeHRM Login",
-          "fullTitle": "OrangeHRM Login",
+          "title": "POM",
+          "fullTitle": "POM",
           "timedOut": null,
-          "duration": 22778,
+          "duration": 2698,
           "state": "passed",
-          "speed": "slow",
+          "speed": "fast",
           "pass": true,
           "fail": false,
           "pending": false,
           "context": null,
-          "code": "cy.visit('https://opensource-demo.orangehrmlive.com/index.php/auth/validateCredentials');\ncy.get('#txtUsername').type('Admin');\ncy.get('#txtPassword').type('admin123');\ncy.get('#btnLogin').click();\ncy.get('#menu_admin_viewAdminModule > b', {\n  timeout: 6000\n}).click();",
+          "code": "login.navigate('https://trytestingthis.netlify.app/');\nlogin.userName().type('test');\nlogin.passWord().type('test');\nlogin.submit().click(); //cy.wait(2000);\ncy.get('h4 > a').click();",
           "err": {},
-          "uuid": "a7d056a7-e993-4bd8-acc7-46b9558d39ac",
-          "parentUUID": "2d7b3f00-15c2-4b22-b88b-8d8101251945",
+          "uuid": "f5708020-3c80-4e6d-b65c-19444d19d4df",
+          "parentUUID": "60c12962-173e-42c6-bc54-6618f805fe78",
           "isHook": false,
           "skipped": false
         }
       ],
       "suites": [],
       "passes": [
-        "a7d056a7-e993-4bd8-acc7-46b9558d39ac"
+        "f5708020-3c80-4e6d-b65c-19444d19d4df"
       ],
       "failures": [],
       "pending": [],
       "skipped": [],
-      "duration": 22778,
+      "duration": 2698,
       "root": true,
       "rootEmpty": false,
       "_timeout": 2000
@@ -78,8 +78,7 @@
         "charts": true,
         "overwrite": false,
         "html": false,
-        "json": true,
-        "reportDir": "cypress/reports"
+        "json": true
       },
       "version": "6.2.0"
     }

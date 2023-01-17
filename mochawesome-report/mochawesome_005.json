@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2022-07-24T19:18:02.099Z",
-    "end": "2022-07-24T19:18:12.229Z",
-    "duration": 10130,
+    "start": "2023-01-16T19:24:49.072Z",
+    "end": "2023-01-16T19:25:00.078Z",
+    "duration": 11006,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "d6a598e6-fdb3-4b22-b115-fb190ff7f84c",
+      "uuid": "f33738dd-05ed-4e9d-8ef9-28b12c5ec2f4",
       "title": "",
       "fullFile": "cypress\\e2e\\implictandecplicitassertions.cy.js",
       "file": "cypress\\e2e\\implictandecplicitassertions.cy.js",
@@ -29,17 +29,17 @@
           "title": "implictAssertions",
           "fullTitle": "implictAssertions",
           "timedOut": null,
-          "duration": 4060,
+          "duration": 5193,
           "state": "passed",
-          "speed": "fast",
+          "speed": "medium",
           "pass": true,
           "fail": false,
           "pending": false,
           "context": null,
           "code": "cy.visit('https://example.cypress.io/');\ncy.contains('get').click();\ncy.get('#query-btn').should('contain.text', 'Button').should('be.enabled');",
           "err": {},
-          "uuid": "b5c959c7-048d-461c-a347-bc20a47507ba",
-          "parentUUID": "d6a598e6-fdb3-4b22-b115-fb190ff7f84c",
+          "uuid": "3b9d34a2-35f3-4a64-bad9-802dcd289afd",
+          "parentUUID": "f33738dd-05ed-4e9d-8ef9-28b12c5ec2f4",
           "isHook": false,
           "skipped": false
         },
@@ -47,7 +47,7 @@
           "title": "explicitAssertions",
           "fullTitle": "explicitAssertions",
           "timedOut": null,
-          "duration": 1705,
+          "duration": 931,
           "state": "passed",
           "speed": "fast",
           "pass": true,
@@ -56,21 +56,21 @@
           "context": null,
           "code": "cy.visit('https://example.cypress.io/');\ncy.contains('get').click();\nexpect(true).to.be.true;\nlet name = 'sudh';\nexpect(name).to.be.equal('sudh');\nassert.equal(name, 'sudh', 'Not Equal');",
           "err": {},
-          "uuid": "056c6745-122d-42e1-8499-96d82a09ca40",
-          "parentUUID": "d6a598e6-fdb3-4b22-b115-fb190ff7f84c",
+          "uuid": "c00f4af3-3007-4509-a141-279df27b9d19",
+          "parentUUID": "f33738dd-05ed-4e9d-8ef9-28b12c5ec2f4",
           "isHook": false,
           "skipped": false
         }
       ],
       "suites": [],
       "passes": [
-        "b5c959c7-048d-461c-a347-bc20a47507ba",
-        "056c6745-122d-42e1-8499-96d82a09ca40"
+        "3b9d34a2-35f3-4a64-bad9-802dcd289afd",
+        "c00f4af3-3007-4509-a141-279df27b9d19"
       ],
       "failures": [],
       "pending": [],
       "skipped": [],
-      "duration": 5765,
+      "duration": 6124,
       "root": true,
       "rootEmpty": false,
       "_timeout": 2000
@@ -97,8 +97,7 @@
         "charts": true,
         "overwrite": false,
         "html": false,
-        "json": true,
-        "reportDir": "cypress/reports"
+        "json": true
       },
       "version": "6.2.0"
     }
