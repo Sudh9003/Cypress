@@ -1,5 +1,5 @@
 /// <reference types="cypress"/>
-import {Login} from '../pageObject/loginPageObject.cy'
+import Login from '../pageObject/loginPageObject.cy'
 
 const login = new Login()
 it('POM',()=>{

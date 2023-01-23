@@ -1,4 +1,4 @@
-export class Login{
+module.exports = class Login{
 
     user_name = '#uname'
     pass_word = '#pwd'
