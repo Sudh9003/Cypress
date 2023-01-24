@@ -4,7 +4,7 @@ describe('fixture and hooks validation',()=>{
         cy.fixture('example').then(function(data){
            this.data=data
         })
-       // cy.visit(Cypress.env('url'))
+        cy.visit(Cypress.env('url'))
     })
     it('fixture validation',function(){
       cy.get('input[name=name]:nth-child(2)').type(this.data.name)
