@@ -39,15 +39,6 @@ describe('Handle Alert Popup and Child Window',()=>{
         cy.get('#opentab').then((fu)=>{
                 const url=fu.prop('href')
                 cy.visit(url)
-
-        })
+       })
   })
-  
-  
-
-
-
-
-
-
 })

@@ -10,7 +10,6 @@ async function setupNodeEvents(on, config) {
   return config;
 }
 module.exports = defineConfig({
-
   defaultCommandTimeout: 5000,
   env:{
     url:"https://rahulshettyacademy.com/angularpractice/"
@@ -20,6 +19,7 @@ module.exports = defineConfig({
     runMode: 1,//retry for failed Tcs
     },
   e2e: {
+
     watchForFileChanges: true,
     "reporter":"mochawesome",
     "reporterOptions":{"charts":true,"overwrite":false,"html":false,"json":true
@@ -28,7 +28,7 @@ module.exports = defineConfig({
   baseUrl:'https://rahulshettyacademy.com/AutomationPractice',
   //It will consider to execute every file with .JS extension/ We can have tcs 
   //Inside integration folder
-  specPattern:'cypress/e2e/BDD/*.feature',
+   specPattern:'cypress/e2e/BDD/*.feature',
   //specPattern:'cypress/e2e/*.js',
   setupNodeEvents,
   },

@@ -1,5 +1,5 @@
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor"
-
+/*npx cypress run --env tags="@Smoke" --headed --browser chrome*/
 Given('Navigate To The Ecommerce Page',()=>{
     cy.visit(Cypress.env('url'))
 })
@@ -36,7 +36,8 @@ When('Validate The Total Price',()=>{
       expect(Number(total)).to.be.equal(sum)
     })
 })
-Then('Select Counntry And Verify Thank You Message',()=>{
+Then('Select Country And Verify Thank You Message',()=>{
+    cy.wait(4000)
     cy.get(':nth-child(4) > :nth-child(5) > .btn').click()
      cy.get('#country').type('India')
      cy.get('.suggestions > ul > li > a').click()
@@ -47,3 +48,16 @@ Then('Select Counntry And Verify Thank You Message',()=>{
        expect(alertText.includes('Success! Thank you! ')).to.be.true
      })
 })
+ When('Add Name and Email and Select Item',function(dataTable){
+     // [Sudh, sudh@gmail.com] when .rawTable is called
+     //row number 1 and 0 index
+     cy.get('input[name=name]:nth-child(2)').type(dataTable.rawTable[1][0])
+     cy.get('input[name=email]').type(dataTable.rawTable[1][1])
+     cy.wait(5000)
+     Cypress.config('defaultCommandTimeout',6000)
+     cy.get('select').select('Female')
+     cy.get(':nth-child(2) > .nav-link').click()
+     this.data.productName.forEach((element)=>{
+     cy.selectProduct(element)
+     }) 
+ })

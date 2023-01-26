@@ -1,0 +1,154 @@
+[
+  {
+    "description": "    Regression Test         ",
+    "elements": [
+      {
+        "description": "",
+        "id": "end-to-end-item-checkout-validation;add-item-and-total-sum-validation-with-submit-and-thank-you-mes.",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Add Item and Total Sum Validation with Submit And Thank You Mes.",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 7,
+            "name": "Navigate To The Ecommerce Page",
+            "result": {
+              "duration": 1972000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 8,
+            "name": "I Add Items To Cart",
+            "result": {
+              "duration": 8535000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 9,
+            "name": "Validate The Total Price",
+            "result": {
+              "duration": 273000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 10,
+            "name": "Select Country And Verify Thank You Message",
+            "result": {
+              "duration": 9987000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario",
+        "tags": [
+          {
+            "line": 5,
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "description": "",
+        "id": "end-to-end-item-checkout-validation;data-driven-testing-validation-using-cucumber.",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "data Driven Testing validation using cucumber.",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 14,
+            "name": "Navigate To The Ecommerce Page",
+            "result": {
+              "duration": 999000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 15,
+            "name": "Add Name and Email and Select Item",
+            "result": {
+              "duration": 6963000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Name",
+                  "Email"
+                ]
+              },
+              {
+                "cells": [
+                  "Sudh",
+                  "sudh@gmail.com"
+                ]
+              }
+            ]
+          },
+          {
+            "keyword": "And ",
+            "line": 18,
+            "name": "Validate The Total Price",
+            "result": {
+              "duration": 200000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 19,
+            "name": "Select Country And Verify Thank You Message",
+            "result": {
+              "duration": 9825000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario",
+        "tags": [
+          {
+            "line": 12,
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "id": "end-to-end-item-checkout-validation",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "End To End Item Checkout Validation",
+    "uri": "cypress\\e2e\\BDD\\eCommerce.feature"
+  }
+]
