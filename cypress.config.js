@@ -28,8 +28,8 @@ module.exports = defineConfig({
   baseUrl:'https://rahulshettyacademy.com/AutomationPractice',
   //It will consider to execute every file with .JS extension/ We can have tcs 
   //Inside integration folder
-   specPattern:'cypress/e2e/BDD/*.feature',
-  //specPattern:'cypress/e2e/*.js',
+   //specPattern:'cypress/e2e/BDD/*.feature',
+  specPattern:'cypress/e2e/*.js',
   setupNodeEvents,
   },
 });
