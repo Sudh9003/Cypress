@@ -16,7 +16,7 @@ describe('Mocking HTTP Request',()=>{
                     }]
             }).as('Bookdetails')
         cy.get(".btn.btn-primary:contains(' Virtual Library ')").click()
-        cy.wait('@Bookdetails').should(({request,response})=>   //wait till this promose get resolved
+        cy.wait('@Bookdetails').should(({request,response})=>   //wait till this promise get resolved
         {    
             cy.get('tr').should('have.length',response.body.length+1)
         })

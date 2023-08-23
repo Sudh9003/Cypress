@@ -37,6 +37,7 @@
     "@cypress/browserify-preprocessor": "latest",
     "cypress-grep": "^3.0.4",
     "cypress-iframe": "^1.0.1",
-    "multiple-cucumber-html-reporter": "^3.1.0"
+    "multiple-cucumber-html-reporter": "^3.1.0",
+    "neat-csv":"5.1.0"
   }
 }
